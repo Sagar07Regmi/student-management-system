@@ -1,0 +1,51 @@
+/* Global styles, custom utility classes, or overrides for Tailwind */
+
+body {
+    /* Tailwind handles most base styling. This is for global overrides or specific needs. */
+    transition: background-color 0.3s ease; /* Example global transition */
+}
+
+/* Example: Custom scrollbar (optional, browser support varies) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* slate-300 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; /* slate-500 */
+}
+
+/* Define some theme colors as CSS variables if needed for custom components,
+   though Tailwind's color palette is extensive. */
+:root {
+    --primary-color: #0ea5e9; /* sky-500 */
+    --primary-hover-color: #0284c7; /* sky-600 */
+    --secondary-color: #64748b; /* slate-500 */
+    --danger-color: #ef4444; /* red-500 */
+    --success-color: #22c55e; /* green-500 */
+}
+
+/* Basic container styling if not using Tailwind's container for everything */
+.app-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Loading indicator style (can be enhanced) */
+#loading-indicator svg { /* If you add an SVG spinner */
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

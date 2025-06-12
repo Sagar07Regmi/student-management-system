@@ -1,0 +1,32 @@
+/* Styles for general dashboard layout and sections */
+
+.dashboard-section {
+    background-color: white;
+    padding: 1.5rem; /* 24px */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    margin-bottom: 2rem; /* 32px */
+}
+
+.dashboard-section h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* semibold */
+    color: #1e3a8a; /* Tailwind blue-800, good for titles */
+    padding-bottom: 0.75rem; /* 12px */
+    margin-bottom: 1.5rem; /* 24px */
+    border-bottom: 1px solid #e5e7eb; /* slate-200 */
+}
+
+.dashboard-section h3 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* semibold */
+    color: #1e40af; /* Tailwind blue-700 */
+    padding-bottom: 0.5rem; /* 8px */
+    margin-bottom: 1rem; /* 16px */
+}
+
+/* General content section styling for dashboards */
+.app-content-section {
+    /* This class can be used on the main div loaded for each dashboard page */
+    /* display: none; /* Initially hidden, shown by router */
+}

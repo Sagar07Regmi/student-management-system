@@ -1,0 +1,17 @@
+    <div class="app-content-section dashboard-section">
+        <h2 class="text-3xl font-semibold mb-6 text-slate-800">Enter/View Grades & Attendance</h2>
+        <p class="mb-6 text-slate-600">Select a course and student to manage their grades and attendance records.</p>
+    
+        <div class="form-group mb-6">
+            <label for="selectCourseForGrading" class="block text-lg font-medium text-slate-700 mb-2">Select Course:</label>
+            <select id="selectCourseForGrading" class="w-full md:w-1/2 p-3 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 text-base">
+                <option value="">Loading your courses...</option>
+                </select>
+        </div>
+    
+        <div id="gradesAttendanceManagementArea" class="hidden"> <h3 class="card-title" id="selectedCourseForGradingDisplay"></h3>
+            <p class="text-slate-500">Student list and grading/attendance interface for the selected course will appear here.</p>
+            </div>
+        <div id="gradesAttendanceMessage" class="message-box info" style="display: none;"></div>
+    </div>
+    

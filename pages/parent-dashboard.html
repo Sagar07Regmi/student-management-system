@@ -1,0 +1,36 @@
+<div class="app-content-section dashboard-section">
+    <h2 class="text-3xl font-semibold mb-6 text-slate-800">Parent Dashboard</h2>
+    <p class="mb-6 text-slate-600" id="parentWelcomeMessage">Welcome! View your child's academic progress, courses, and grades.</p>
+
+    <div class="form-group mb-6 bg-slate-50 p-4 rounded-lg border border-slate-200">
+        <label for="selectChild" class="block text-lg font-medium text-slate-700 mb-2">Select Your Child:</label>
+        <select id="selectChild" class="w-full md:w-1/2 p-3 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 text-base">
+            <option value="">Loading children...</option>
+            </select>
+    </div>
+
+    <div id="childInfoContainer" class="mt-4">
+        <div class="card hidden" id="selectedChildCard"> <h3 class="card-title" id="childNameDisplay">Please select a child to view details.</h3>
+            
+            <div id="childProfileDetails" class="mb-6">
+                </div>
+            
+            <div class="mb-6">
+                <h4 class="text-xl font-semibold text-slate-700 mb-2">Enrolled Courses</h4>
+                <ul id="childCoursesList" class="list-disc list-inside pl-1 text-slate-700 space-y-1">
+                    <li class="text-slate-500">Select a child to see courses.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-semibold text-slate-700 mb-2">Grades & Attendance Summary</h4>
+                <div id="childGradesAttendance" class="text-slate-700">
+                    <p class="text-slate-500">Select a child to see grades and attendance.</p>
+                </div>
+            </div>
+        </div>
+         <div id="noChildSelectedMessage" class="message-box info text-center">
+            Please select a child from the dropdown above to view their information.
+        </div>
+    </div>
+</div>

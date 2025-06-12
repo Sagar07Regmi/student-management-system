@@ -1,0 +1,73 @@
+<div class="app-content-section dashboard-section">
+    <h2 class="text-3xl font-semibold mb-6 text-slate-800">Admin Dashboard</h2>
+    <p class="mb-6 text-slate-600">Welcome, Admin! From here you can manage students, courses, enrollments, and other system settings.</p>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="card">
+            <h3 class="card-title">Add New Student</h3>
+            <form id="addStudentForm">
+                <div class="form-group mb-4">
+                    <label for="addFormStudentID" class="block text-sm font-medium text-slate-700 mb-1">Student ID:</label>
+                    <input type="text" id="addFormStudentID" class="w-full p-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="addFormStudentName" class="block text-sm font-medium text-slate-700 mb-1">Full Name:</label>
+                    <input type="text" id="addFormStudentName" class="w-full p-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="addFormStudentEmail" class="block text-sm font-medium text-slate-700 mb-1">Email Address:</label>
+                    <input type="email" id="addFormStudentEmail" class="w-full p-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="addFormStudentDOB" class="block text-sm font-medium text-slate-700 mb-1">Date of Birth:</label>
+                    <input type="date" id="addFormStudentDOB" class="w-full p-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Add Student</button>
+            </form>
+            <div id="addMessage" class="message-box mt-4"></div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Find Student by ID</h3>
+            <form id="getStudentByIdForm">
+                <div class="form-group mb-4">
+                    <label for="searchStudentID" class="block text-sm font-medium text-slate-700 mb-1">Enter Student ID:</label>
+                    <input type="text" id="searchStudentID" class="w-full p-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Get Student Details</button>
+            </form>
+            <div id="getStudentResultDiv" class="student-details message-box mt-4 p-4 border border-slate-200 rounded-md bg-slate-50 min-h-[150px]">
+                <p class="text-slate-500">Enter an ID and click "Get Student Details".</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-8"> <div class="flex justify-between items-center mb-4">
+            <h3 class="card-title !mb-0 !pb-0 !border-none">All Registered Students</h3>
+            <button id="listStudentsBtn" class="btn btn-secondary">Refresh List</button>
+        </div>
+        <div id="listMessage" class="message-box mb-4"></div>
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentListTableBody">
+                    <tr><td colspan="5" class="text-center p-4 text-slate-500">Click "Refresh List" to load students.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card mt-8">
+        <h3 class="card-title">Course Management (Placeholder)</h3>
+        <p class="text-slate-600">Functionality to add, view, and manage courses will go here.</p>
+        <button class="btn btn-primary mt-2">Manage Courses</button>
+    </div>
+</div>
